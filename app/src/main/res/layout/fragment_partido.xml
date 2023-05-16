@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feature.partidos.detalle.ui.FragmentPartido">
+
+    <ImageView
+        android:id="@+id/imagePartido"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/medium"
+        android:layout_marginHorizontal="@dimen/medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        tools:src="@tools:sample/backgrounds/scenic[2]" />
+
+    <ImageView
+        android:id="@+id/imageJugador1"
+        app:layout_constraintTop_toBottomOf="@id/imagePartido"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/txtVersus"
+        android:layout_marginTop="@dimen/large"
+        android:layout_marginStart="@dimen/medium"
+        android:layout_width="0dp"
+        android:maxWidth="100dp"
+        android:adjustViewBounds="true"
+        android:layout_height="wrap_content"
+        tools:src="@tools:sample/avatars[3]" />
+
+    <TextView
+        android:id="@+id/txtVersus"
+        app:layout_constraintStart_toEndOf="@id/imageJugador1"
+        android:text="VS"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@id/imageJugador1"
+        app:layout_constraintBottom_toBottomOf="@id/imageJugador1"
+        app:layout_constraintEnd_toStartOf="@id/imageJugador2"
+        android:layout_margin="@dimen/large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/imageJugador2"
+        app:layout_constraintTop_toBottomOf="@id/imagePartido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txtVersus"
+        android:layout_marginTop="@dimen/large"
+        android:layout_marginEnd="@dimen/medium"
+        android:layout_width="0dp"
+        android:maxWidth="100dp"
+        android:adjustViewBounds="true"
+        android:layout_height="wrap_content"
+        tools:src="@tools:sample/avatars[3]" />
+
+    <TextView
+        android:id="@+id/txtNombreJugador1"
+        tools:text="Jugador 1"
+        android:textColor="@color/carrot_dark"
+        android:textSize="@dimen/medium"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/imageJugador1"
+        app:layout_constraintStart_toStartOf="@id/imageJugador1"
+        app:layout_constraintEnd_toEndOf="@id/imageJugador1"
+        android:layout_marginTop="@dimen/medium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnVerJugador1"
+        app:layout_constraintTop_toBottomOf="@id/txtNombreJugador1"
+        app:layout_constraintStart_toStartOf="@id/txtNombreJugador1"
+        app:layout_constraintEnd_toEndOf="@id/txtNombreJugador1"
+        android:text="Ver Jugador"
+        android:theme="@style/GeneralButton"
+        android:textAllCaps="false"
+        android:layout_marginTop="@dimen/medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txtNombreJugador2"
+        tools:text="Jugador 2"
+        android:gravity="center"
+        android:textColor="@color/carrot_dark"
+        android:textSize="@dimen/medium"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/imageJugador2"
+        app:layout_constraintStart_toStartOf="@id/imageJugador2"
+        app:layout_constraintEnd_toEndOf="@id/imageJugador2"
+        android:layout_marginTop="@dimen/medium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnVerJugador2"
+        app:layout_constraintTop_toBottomOf="@id/txtNombreJugador2"
+        app:layout_constraintStart_toStartOf="@id/txtNombreJugador2"
+        app:layout_constraintEnd_toEndOf="@id/txtNombreJugador2"
+        android:text="Ver Jugador"
+        android:theme="@style/GeneralButton"
+        android:textAllCaps="false"
+        android:layout_marginTop="@dimen/medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+    <TextView
+        android:id="@+id/nombrePuntuacion1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnVerJugador1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/large"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginHorizontal="@dimen/medium"
+        android:textColor="@color/carrot_dark"
+        android:textSize="@dimen/medium"
+        android:textStyle="bold"
+        tools:text="JUGADOR 1"/>
+
+    <TextView
+        android:id="@+id/puntuacionJ1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnVerJugador1"
+        app:layout_constraintStart_toEndOf="@id/nombrePuntuacion1"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/large"
+        android:layout_marginEnd="@dimen/medium"
+        android:textColor="@color/white"
+        android:textSize="@dimen/medium"
+        android:textStyle="bold"
+        tools:text="     6    2     2    6    6"/>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider"
+        app:layout_constraintTop_toBottomOf="@id/puntuacionJ1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/small"
+        android:layout_marginHorizontal="@dimen/medium"
+        android:background="@color/carrot_dark"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <TextView
+        android:id="@+id/nombrePuntuacion2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        app:layout_constraintStart_toStartOf="parent"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginTop="@dimen/small"
+        android:layout_marginHorizontal="@dimen/medium"
+        android:textColor="@color/carrot_dark"
+        android:textSize="@dimen/medium"
+        android:textStyle="bold"
+        tools:text="JUGADOR 2:     2    6     6    2    6"/>
+
+    <TextView
+        android:id="@+id/puntuacionJ2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        app:layout_constraintStart_toEndOf="@id/nombrePuntuacion2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/small"
+        android:layout_marginEnd="@dimen/medium"
+        android:textColor="@color/white"
+        android:textSize="@dimen/medium"
+        android:textStyle="bold"
+        tools:text="     2    6     6    2    6"/>
+
+    <Button
+        android:id="@+id/btnArbitrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/large"
+        android:layout_marginHorizontal="@dimen/large"
+        android:theme="@style/ButtonLogin"
+        android:textAllCaps="true"
+        android:text="Arbitrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

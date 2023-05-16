@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feature.arbitraje.ui.ArbitrajeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fondo"
+        android:alpha="0.2">
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnJugador1"
+        android:layout_width="0dp"
+        android:layout_marginHorizontal="@dimen/medium"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnJugador2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:maxLines="2"
+        tools:text="Jugador 1"
+        app:layout_constraintHorizontal_chainStyle="spread" />
+
+    <Button
+        android:id="@+id/btnJugador2"
+        android:layout_width="0dp"
+        android:background="@color/grey"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/medium"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Jugador 2"
+        app:layout_constraintStart_toEndOf="@+id/btnJugador1"/>
+
+    <Button
+        android:id="@+id/btnAce"
+        android:layout_width="144dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="32dp"
+        android:text="ACE"
+        android:theme="@style/ButtonLogin"
+        app:layout_constraintEnd_toStartOf="@+id/btnDobleFalta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnJugador1" />
+
+    <Button
+        android:id="@+id/btnDobleFalta"
+        android:layout_width="144dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="52dp"
+        android:text="DOUBLE FAULT"
+        android:theme="@style/ButtonSignUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnJugador2" />
+
+    <Button
+        android:id="@+id/btnWinner"
+        android:layout_width="144dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="52dp"
+        android:text="WINNER"
+        app:layout_constraintEnd_toStartOf="@+id/btnUnforced"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAce"
+        android:theme="@style/ButtonLogin" />
+
+    <Button
+        android:id="@+id/btnUnforced"
+        android:layout_width="144dp"
+        android:layout_height="84dp"
+        android:layout_marginEnd="52dp"
+        android:text="UNFORCED"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDobleFalta"
+        android:theme="@style/ButtonSignUp" />
+
+    <Button
+        android:id="@+id/btnNet"
+        android:layout_width="144dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="52dp"
+        android:text="NET POINT WON"
+        app:layout_constraintEnd_toStartOf="@+id/btnBreak"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnWinner"
+        android:theme="@style/ButtonLogin" />
+
+    <Button
+        android:id="@+id/btnBreak"
+        android:layout_width="144dp"
+        android:layout_height="84dp"
+        android:layout_marginEnd="52dp"
+        android:text="BREAK POINT WON"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUnforced"
+        android:theme="@style/ButtonSignUp" />
+
+    <TableLayout
+        android:layout_width="352dp"
+        android:layout_height="221dp"
+        android:layout_margin="@android:dimen/app_icon_size"
+        android:layout_marginTop="52dp"
+        android:stretchColumns="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBreak">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvJugador1Tabla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                tools:text="JUGADOR 1"
+                android:textStyle="bold"
+                android:textColor="@color/carrot_dark"
+                />
+
+            <TextView
+                android:id="@+id/tvJugador2Tabla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                tools:text="JUGADOR 2"
+                android:textStyle="bold"
+                android:textColor="@color/carrot_dark"
+                />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="ACE"
+                android:textStyle="bold"
+                android:textColor="@color/carrot_dark"
+                />
+
+            <TextView
+                android:id="@+id/tvAce1"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tvAce2"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="center" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="DOBLES FALTAS"
+                android:textStyle="bold"
+                android:textColor="@color/carrot_dark"
+                />
+
+            <TextView
+                android:id="@+id/tvDobleFalta1"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tvDobleFalta2"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="center" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="WINNER"
+                android:textStyle="bold"
+                android:textColor="@color/carrot_dark"
+                />
+
+            <TextView
+                android:id="@+id/tvWinner1"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tvWinner2"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="center" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="ERRORES NO FORZADOS"
+                android:textStyle="bold"
+                android:textColor="@color/carrot_dark"
+                />
+
+            <TextView
+                android:id="@+id/tvUnforced1"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tvUnforced2"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="center" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="PUNTOS EN LA RED"
+                android:textStyle="bold"
+                android:textColor="@color/carrot_dark"
+                />
+
+            <TextView
+                android:id="@+id/tvNet1"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tvNet2"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="center" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="BREAK POINTS GANADOS"
+                android:textStyle="bold"
+                android:textColor="@color/carrot_dark"
+                />
+
+            <TextView
+                android:id="@+id/tvBreak1"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tvBreak2"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="center" />
+        </TableRow>
+
+    </TableLayout>
+
+
+    <Button
+        android:id="@+id/btnGuardarArbitraje"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        android:layout_margin="@dimen/large"
+        android:theme="@style/ButtonRegister"
+        android:text="Guardar partido"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

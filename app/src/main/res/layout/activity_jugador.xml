@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/fondo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/medium"
+    tools:context=".feature.jugador.ui.JugadorActivity"
+
+    >
+
+
+    <TextView
+        android:id="@+id/txtNombreJugador"
+        android:textSize="30sp"
+        tools:text="Stefanos tsisipas"
+        android:textColor="@color/carrot_dark"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/medium"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:background="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"/>
+
+    <TextView
+        android:id="@+id/txtpais"
+        tools:text="Pais : Calvarrasa"
+        android:textSize="20sp"
+        android:textColor="@color/carrot_dark"
+        android:layout_margin="@dimen/small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/txtRanking"
+        android:textSize="20sp"
+        android:textColor="@color/carrot_dark"
+        android:layout_margin="@dimen/small"
+        tools:text="Ranking : 180"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/txtRankingMovement"
+        android:textSize="20sp"
+        android:textColor="@color/carrot_dark"
+        android:layout_margin="@dimen/small"
+        tools:text="RankingMovement : -19"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/txtRankingPoints"
+        android:textSize="20sp"
+        android:textColor="@color/carrot_dark"
+        android:layout_margin="@dimen/small"
+        tools:text="RankingPoints : -19"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/txtRaceRanking"
+        android:textSize="20sp"
+        android:textColor="@color/carrot_dark"
+        android:layout_margin="@dimen/small"
+        tools:text="RaceRanking : -19"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/txtRaceMovement"
+        android:textSize="20sp"
+        android:textColor="@color/carrot_dark"
+        android:layout_margin="@dimen/small"
+        tools:text="RaceMovement : -19"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/txtRacePoints"
+        android:textSize="20sp"
+        android:textColor="@color/carrot_dark"
+        android:layout_margin="@dimen/small"
+        tools:text="RacePoints : -19"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

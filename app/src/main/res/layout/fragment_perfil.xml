@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/extra_large"
+            android:layout_marginTop="@dimen/extra_large"
+            android:layout_marginEnd="@dimen/extra_large"
+            android:layout_marginBottom="@dimen/extra_large"
+
+            android:background="@color/alizarin"
+            android:elevation="10dp"
+            android:orientation="vertical"
+            android:outlineProvider="bounds"
+            android:padding="16dp"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small"
+                android:layout_marginRight="@dimen/small"
+                android:layout_marginBottom="@dimen/small"
+                android:text="Username"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editTextUsuario"
+                    android:layout_width="243dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:hint="Introduce tu username" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonUsuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:src="@drawable/edit" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small"
+                android:layout_marginRight="@dimen/small"
+                android:layout_marginBottom="@dimen/small"
+                android:text="Nombre"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editTextNombre"
+                    android:layout_width="246dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+
+                    android:hint="Introduce tu nombre" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonNombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:src="@drawable/edit" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small"
+                android:layout_marginRight="@dimen/small"
+                android:layout_marginBottom="@dimen/small"
+                android:text="Apellidos"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editTextApellidos"
+                    android:layout_width="249dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:hint="Introduce tus apellidos" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonApellidos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:src="@drawable/edit" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small"
+                android:layout_marginRight="@dimen/small"
+                android:layout_marginBottom="@dimen/small"
+                android:text="Email"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editTextEmail"
+                    android:layout_width="246dp"
+                    android:layout_height="35dp"
+                    android:ellipsize="end"
+                    android:hint="Introduce tu email" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:src="@drawable/edit" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/buttonGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="@dimen/small"
+                android:text="@string/guardarCambios"
+                android:theme="@style/ButtonRegister" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/buttonCerrarSesion"
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/small"
+                    android:layout_marginTop="@dimen/small"
+                    android:layout_marginEnd="@dimen/small"
+                    android:layout_marginBottom="@dimen/small"
+                    android:text="@string/cerrarSesion"
+                    android:textSize="12dp"
+                    android:theme="@style/ButtonSignUp" />
+
+                <Button
+                    android:id="@+id/buttonEliminarCuenta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/small"
+                    android:layout_marginTop="@dimen/small"
+                    android:layout_marginEnd="@dimen/small"
+                    android:layout_marginBottom="@dimen/small"
+                    android:layout_toEndOf="@+id/buttonCerrarSesion"
+                    android:layout_toRightOf="@+id/buttonCerrarSesion"
+                    android:text="@string/eliminarCuenta"
+                    android:textSize="12dp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+</RelativeLayout>

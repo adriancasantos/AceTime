@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">AceTime</string>
+    <string name="Username">Usuario</string>
+    <string name="Password">Contraseña</string>
+    <string name="RememberMe">Recuérdame</string>
+    <string name="Login">Login</string>
+    <string name="Register">Registro</string>
+    <string name="Logo">Logo</string>
+    <string name="FirstName">Nombre</string>
+    <string name="LastName">Apellidos</string>
+    <string name="Email">Email</string>
+    <string name="ConfirmEmailAddress">Confirma tu email</string>
+    <string name="SignUp">Regístrate</string>
+    <string name="registrationPage">Página de Registro</string>
+    <string name="chooseImage">Elige una imagen</string>
+    <string name="marcador">%s: </string>
+    <string name="pais">Pais: %s </string>
+    <string name="ranking">Ranking: %s</string>
+    <string name="rankingMovement">Movimiento en el Ranking: %s</string>
+    <string name="raceRanking">Race ranking: %d</string>
+    <string name="rankingPoints">Puntos de ranking: %d</string>
+    <string name="raceMovements">Carrera a Turín: %s</string>
+    <string name="racePoints">Puntos de la race: %d</string>
+    <string name="guardarCambios">Guardar cambios</string>
+    <string name="cerrarSesion">Cerrar sesión</string>
+    <string name="eliminarCuenta">Eliminar cuenta</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
